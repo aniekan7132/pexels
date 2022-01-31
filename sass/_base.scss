@@ -1,0 +1,43 @@
+
+$color-primary: #eb2f64;
+$color-primary-light: #ff3366;
+$color-primary-dark: #BA265D;
+
+$color-grey-light-1: #faf9f9;
+$color-grey-light-2: #f4f2f2;
+$color-grey-light-3: #f0eeee;
+$color-grey-light-4: #ccc;
+
+$color-grey-light: #333;
+
+$color-black: #000;
+
+$grid-width: 114rem;
+$gutter-horizontal: 8rem;
+$gutter-vertical-small: 6rem;
+
+.u-center-text {
+ text-align: center;
+}
+/*grey light 2: #777
+grey light 3; #999
+*/
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+html {
+ font-size: 62.5%;  //1rem = 10px. 10px/16px
+}
+
+body {
+ font-family: "lato", sans-serif;
+ font-weight: 400;
+ font-size: 1.6rem;
+ line-height: 1.7;
+ background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+ padding: 1.5rem;
+}

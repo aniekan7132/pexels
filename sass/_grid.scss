@@ -1,0 +1,18 @@
+.row {
+ margin: 0 auto;
+ max-width: $grid-width;
+ //background-color: white;
+
+  [class ^= "col-"] {
+  width: calc((100% - #{$gutter-horizontal}) / 2);
+  float: left;
+  }
+
+  .col-1-of-3 {width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
+  //display: grid;
+
+   &:not(:last-child) {
+   margin-right: $gutter-horizontal;
+  }
+ }
+}
