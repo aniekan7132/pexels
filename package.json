@@ -10,5 +10,14 @@
   "license": "ISC",
   "dependencies": {
     "node-sass": "^6.0.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aniekan7132/pexels.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aniekan7132/pexels/issues"
+  },
+  "homepage": "https://github.com/aniekan7132/pexels#readme"
 }
