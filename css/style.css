@@ -56,26 +56,33 @@ body {
   text-transform: uppercase;
   color: #BA265D;
   text-align: center;
-  width: 100%; }
-  .heading__primary-main {
-    display: block;
-    font-weight: 900;
-    width: 100%; }
-  .heading__primary-sub {
-    display: block;
-    letter-spacing: .6rem;
-    width: 100%; }
+  font-weight: 900; }
+  @media (max-width: 56.25em) {
+    .heading__primary {
+      width: 100%; } }
+  @media (max-width: 37.5em) {
+    .heading__primary {
+      width: 100%; } }
 
 .section__product {
-  background-color: #fff;
-  flex-wrap: wrap; }
+  background-color: #fff; }
   .section__product-list {
-    display: flex; }
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap; }
     .section__product-list:not(:last-child) {
       margin-bottom: 1rem; }
   .section__product-image {
-    width: 25%;
-    display: inline-block; }
+    width: 25%; }
+    @media (max-width: 75em) {
+      .section__product-image {
+        width: 33.33%; } }
+    @media (max-width: 56.25em) {
+      .section__product-image {
+        width: 50%; } }
+    @media (max-width: 37.55em) {
+      .section__product-image {
+        width: 100%; } }
 
 .feature__box {
   background-color: rgba(247, 247, 247, 0.9);
@@ -84,6 +91,10 @@ body {
   border-radius: 3rem;
   font-size: 1.5rem;
   text-align: center; }
+  @media (max-width: 37.5em) {
+    .feature__box {
+      padding: 1rem 4rem;
+      font-size: 2.5rem; } }
   .feature__box--icon {
     font-size: 6rem;
     margin-top: 5rem;
@@ -148,10 +159,22 @@ body {
 .section-heading {
   background-color: #f7f7f7;
   padding: 8rem 12rem; }
+  @media (max-width: 75em) {
+    .section-heading {
+      padding: 4rem 6rem; } }
+  @media (max-width: 56.25em) {
+    .section-heading {
+      padding: 0 2rem; } }
+  @media (max-width: 37.5em) {
+    .section-heading {
+      padding: 1rem 1.5rem; } }
 
 .section-features {
   padding: 4rem 6rem;
   background-color: #eee; }
+  @media (max-width: 37.5em) {
+    .section-features {
+      padding: 1rem 2rem; } }
 
 .footer {
   background-color: #333;

@@ -1,11 +1,25 @@
 .section-heading {
  background-color: $color-grey-light-1;
  padding: 8rem 12rem;
+
+  @media (max-width: 75em) {
+  padding: 4rem 6rem;
+ }
+ @media (max-width: 56.25em) {
+  padding: 0 2rem;
+ }
+ @media (max-width: 37.5em) {
+  padding: 1rem 1.5rem;
+ }
 }
 
 .section-features {
  padding: 4rem 6rem;
  background-color: $color-grey-light-2;
+
+ @media (max-width: 37.5em) {
+  padding: 1rem 2rem;
+ }
 }
 
 .footer {

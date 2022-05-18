@@ -20,38 +20,68 @@
  text-transform: uppercase;
  color: $color-primary-dark;
  text-align: center;
- width: 100%;
- 
- &-main {
-  display: block;
-  font-weight: 900;
-  width: 100%;
- }
+ //width: 100%;
+ font-weight: 900;
 
- &-sub {
-  display: block;
-  letter-spacing: .6rem;
+  @media (max-width: 56.25em) {
   width: 100%;
  }
+ @media (max-width: 37.5em) {
+  width: 100%;
+ }
+ 
+ //&-main {
+  //display: block;
+  //font-weight: 900;
+  //width: 100;
+ //}
+
+ //&-sub {
+  //display: block;
+  //font-weight: 900;
+  //letter-spacing: .6rem;
+  //width: 100%;
+// }
 }
 
 .section__product {
  background-color: #fff;
- //display: flex;
- flex-wrap: wrap;
 
  &-list {
  display: flex;
- //flex-wrap: wrap;
+ -webkit-flex-wrap: wrap;
+ flex-wrap: wrap;
+ //object-fit: cover;
 
  &:not(:last-child) {
   margin-bottom: 1rem;
  }
  }
 
+ &-container {
+  //width: 25%;
+  //display: flex;
+  //height: 25rem;
+  //overflow: hidden;
+  //object-fit: cover;
+ }
+
  &-image {
   width: 25%;
-  display: inline-block;
+  //display: inline-block;
+  //object-fit: cover;
+
+    @media (max-width: 75em) {
+  width: 33.33%;
+ }
+
+   @media (max-width: 56.25em) {
+  width: 50%;
+ }
+
+   @media (max-width: 37.55em) {
+  width: 100%;
+ }
  }
 }
 
@@ -62,6 +92,11 @@
  border-radius: 3rem;
  font-size: 1.5rem;
  text-align: center;
+
+ @media (max-width: 37.5em) {
+  padding: 1rem 4rem;
+  font-size: 2.5rem;
+ }
 
  &--icon {
   font-size: 6rem;
